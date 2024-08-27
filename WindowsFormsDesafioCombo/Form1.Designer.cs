@@ -41,17 +41,19 @@
             this.lblQtdSudeste = new System.Windows.Forms.Label();
             this.lblQtdSul = new System.Windows.Forms.Label();
             this.cboEstados = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.cboNorte = new System.Windows.Forms.ComboBox();
+            this.cboNordeste = new System.Windows.Forms.ComboBox();
+            this.cboCentro = new System.Windows.Forms.ComboBox();
+            this.cboSudeste = new System.Windows.Forms.ComboBox();
+            this.cboSul = new System.Windows.Forms.ComboBox();
             this.btn1 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btn4 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
-            this.btn6 = new System.Windows.Forms.Button();
+            this.btnNorte = new System.Windows.Forms.Button();
+            this.btnNordeste = new System.Windows.Forms.Button();
+            this.btnCentroOeste = new System.Windows.Forms.Button();
+            this.btnSudeste = new System.Windows.Forms.Button();
+            this.btnSul = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -66,7 +68,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 104);
+            this.label2.Location = new System.Drawing.Point(6, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 1;
@@ -75,7 +77,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 157);
+            this.label3.Location = new System.Drawing.Point(6, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 13);
             this.label3.TabIndex = 2;
@@ -84,7 +86,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 205);
+            this.label4.Location = new System.Drawing.Point(6, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 13);
             this.label4.TabIndex = 3;
@@ -93,7 +95,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 269);
+            this.label5.Location = new System.Drawing.Point(6, 184);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 13);
             this.label5.TabIndex = 4;
@@ -102,7 +104,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 325);
+            this.label6.Location = new System.Drawing.Point(6, 240);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 13);
             this.label6.TabIndex = 5;
@@ -120,7 +122,7 @@
             // lblQtdNorte
             // 
             this.lblQtdNorte.AutoSize = true;
-            this.lblQtdNorte.Location = new System.Drawing.Point(495, 104);
+            this.lblQtdNorte.Location = new System.Drawing.Point(483, 19);
             this.lblQtdNorte.Name = "lblQtdNorte";
             this.lblQtdNorte.Size = new System.Drawing.Size(13, 13);
             this.lblQtdNorte.TabIndex = 7;
@@ -129,7 +131,7 @@
             // lblQtdNordeste
             // 
             this.lblQtdNordeste.AutoSize = true;
-            this.lblQtdNordeste.Location = new System.Drawing.Point(495, 157);
+            this.lblQtdNordeste.Location = new System.Drawing.Point(483, 72);
             this.lblQtdNordeste.Name = "lblQtdNordeste";
             this.lblQtdNordeste.Size = new System.Drawing.Size(13, 13);
             this.lblQtdNordeste.TabIndex = 8;
@@ -138,7 +140,7 @@
             // lblQtdCentro
             // 
             this.lblQtdCentro.AutoSize = true;
-            this.lblQtdCentro.Location = new System.Drawing.Point(495, 213);
+            this.lblQtdCentro.Location = new System.Drawing.Point(483, 128);
             this.lblQtdCentro.Name = "lblQtdCentro";
             this.lblQtdCentro.Size = new System.Drawing.Size(13, 13);
             this.lblQtdCentro.TabIndex = 9;
@@ -147,7 +149,7 @@
             // lblQtdSudeste
             // 
             this.lblQtdSudeste.AutoSize = true;
-            this.lblQtdSudeste.Location = new System.Drawing.Point(495, 269);
+            this.lblQtdSudeste.Location = new System.Drawing.Point(483, 184);
             this.lblQtdSudeste.Name = "lblQtdSudeste";
             this.lblQtdSudeste.Size = new System.Drawing.Size(13, 13);
             this.lblQtdSudeste.TabIndex = 10;
@@ -156,7 +158,7 @@
             // lblQtdSul
             // 
             this.lblQtdSul.AutoSize = true;
-            this.lblQtdSul.Location = new System.Drawing.Point(495, 325);
+            this.lblQtdSul.Location = new System.Drawing.Point(483, 240);
             this.lblQtdSul.Name = "lblQtdSul";
             this.lblQtdSul.Size = new System.Drawing.Size(13, 13);
             this.lblQtdSul.TabIndex = 11;
@@ -167,74 +169,77 @@
             this.cboEstados.FormattingEnabled = true;
             this.cboEstados.Items.AddRange(new object[] {
             "AC",
+            "AL",
             "AP",
             "AM",
-            "PA",
-            "RO",
-            "RR",
-            "TO",
-            "AL",
             "BA",
             "CE",
+            "DF",
+            "ES",
+            "GO",
             "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
             "PB",
+            "PR",
             "PE",
             "PI",
-            "RN",
-            "SE",
-            "ES",
-            "MG",
             "RJ",
-            "SP",
-            "PR",
+            "RN",
             "RS",
+            "RO",
+            "RR",
             "SC",
-            "DF"});
+            "SP",
+            "SE",
+            "TO"});
             this.cboEstados.Location = new System.Drawing.Point(130, 47);
             this.cboEstados.Name = "cboEstados";
             this.cboEstados.Size = new System.Drawing.Size(250, 21);
             this.cboEstados.TabIndex = 12;
             this.cboEstados.SelectedIndexChanged += new System.EventHandler(this.cboEstados_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cboNorte
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(130, 104);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(250, 21);
-            this.comboBox2.TabIndex = 13;
+            this.cboNorte.FormattingEnabled = true;
+            this.cboNorte.Location = new System.Drawing.Point(118, 19);
+            this.cboNorte.Name = "cboNorte";
+            this.cboNorte.Size = new System.Drawing.Size(250, 21);
+            this.cboNorte.TabIndex = 13;
             // 
-            // comboBox3
+            // cboNordeste
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(130, 157);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(250, 21);
-            this.comboBox3.TabIndex = 14;
+            this.cboNordeste.FormattingEnabled = true;
+            this.cboNordeste.Location = new System.Drawing.Point(118, 72);
+            this.cboNordeste.Name = "cboNordeste";
+            this.cboNordeste.Size = new System.Drawing.Size(250, 21);
+            this.cboNordeste.TabIndex = 14;
             // 
-            // comboBox4
+            // cboCentro
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(130, 205);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(250, 21);
-            this.comboBox4.TabIndex = 15;
+            this.cboCentro.FormattingEnabled = true;
+            this.cboCentro.Location = new System.Drawing.Point(118, 120);
+            this.cboCentro.Name = "cboCentro";
+            this.cboCentro.Size = new System.Drawing.Size(250, 21);
+            this.cboCentro.TabIndex = 15;
             // 
-            // comboBox5
+            // cboSudeste
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(130, 269);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(250, 21);
-            this.comboBox5.TabIndex = 16;
+            this.cboSudeste.FormattingEnabled = true;
+            this.cboSudeste.Location = new System.Drawing.Point(118, 184);
+            this.cboSudeste.Name = "cboSudeste";
+            this.cboSudeste.Size = new System.Drawing.Size(250, 21);
+            this.cboSudeste.TabIndex = 16;
             // 
-            // comboBox6
+            // cboSul
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(130, 322);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(250, 21);
-            this.comboBox6.TabIndex = 17;
+            this.cboSul.FormattingEnabled = true;
+            this.cboSul.Location = new System.Drawing.Point(118, 237);
+            this.cboSul.Name = "cboSul";
+            this.cboSul.Size = new System.Drawing.Size(250, 21);
+            this.cboSul.TabIndex = 17;
             // 
             // btn1
             // 
@@ -244,83 +249,101 @@
             this.btn1.TabIndex = 18;
             this.btn1.Text = "-";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
-            // btn2
+            // btnNorte
             // 
-            this.btn2.Location = new System.Drawing.Point(425, 98);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(53, 25);
-            this.btn2.TabIndex = 19;
-            this.btn2.Text = "-";
-            this.btn2.UseVisualStyleBackColor = true;
+            this.btnNorte.Location = new System.Drawing.Point(413, 13);
+            this.btnNorte.Name = "btnNorte";
+            this.btnNorte.Size = new System.Drawing.Size(53, 25);
+            this.btnNorte.TabIndex = 19;
+            this.btnNorte.Text = "-";
+            this.btnNorte.UseVisualStyleBackColor = true;
+            this.btnNorte.Click += new System.EventHandler(this.btnNorte_Click);
             // 
-            // btn3
+            // btnNordeste
             // 
-            this.btn3.Location = new System.Drawing.Point(425, 151);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(53, 25);
-            this.btn3.TabIndex = 20;
-            this.btn3.Text = "-";
-            this.btn3.UseVisualStyleBackColor = true;
+            this.btnNordeste.Location = new System.Drawing.Point(413, 66);
+            this.btnNordeste.Name = "btnNordeste";
+            this.btnNordeste.Size = new System.Drawing.Size(53, 25);
+            this.btnNordeste.TabIndex = 20;
+            this.btnNordeste.Text = "-";
+            this.btnNordeste.UseVisualStyleBackColor = true;
+            this.btnNordeste.Click += new System.EventHandler(this.btnNordeste_Click);
             // 
-            // btn4
+            // btnCentroOeste
             // 
-            this.btn4.Location = new System.Drawing.Point(425, 205);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(53, 25);
-            this.btn4.TabIndex = 21;
-            this.btn4.Text = "-";
-            this.btn4.UseVisualStyleBackColor = true;
+            this.btnCentroOeste.Location = new System.Drawing.Point(413, 120);
+            this.btnCentroOeste.Name = "btnCentroOeste";
+            this.btnCentroOeste.Size = new System.Drawing.Size(53, 25);
+            this.btnCentroOeste.TabIndex = 21;
+            this.btnCentroOeste.Text = "-";
+            this.btnCentroOeste.UseVisualStyleBackColor = true;
+            this.btnCentroOeste.Click += new System.EventHandler(this.btnCentroOeste_Click);
             // 
-            // btn5
+            // btnSudeste
             // 
-            this.btn5.Location = new System.Drawing.Point(425, 263);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(53, 25);
-            this.btn5.TabIndex = 22;
-            this.btn5.Text = "-";
-            this.btn5.UseVisualStyleBackColor = true;
+            this.btnSudeste.Location = new System.Drawing.Point(413, 178);
+            this.btnSudeste.Name = "btnSudeste";
+            this.btnSudeste.Size = new System.Drawing.Size(53, 25);
+            this.btnSudeste.TabIndex = 22;
+            this.btnSudeste.Text = "-";
+            this.btnSudeste.UseVisualStyleBackColor = true;
+            this.btnSudeste.Click += new System.EventHandler(this.btnSudeste_Click);
             // 
-            // btn6
+            // btnSul
             // 
-            this.btn6.Location = new System.Drawing.Point(425, 322);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(53, 25);
-            this.btn6.TabIndex = 23;
-            this.btn6.Text = "-";
-            this.btn6.UseVisualStyleBackColor = true;
+            this.btnSul.Location = new System.Drawing.Point(413, 237);
+            this.btnSul.Name = "btnSul";
+            this.btnSul.Size = new System.Drawing.Size(53, 25);
+            this.btnSul.TabIndex = 23;
+            this.btnSul.Text = "-";
+            this.btnSul.UseVisualStyleBackColor = true;
+            this.btnSul.Click += new System.EventHandler(this.btnSul_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnSul);
+            this.groupBox1.Controls.Add(this.btnSudeste);
+            this.groupBox1.Controls.Add(this.btnCentroOeste);
+            this.groupBox1.Controls.Add(this.btnNordeste);
+            this.groupBox1.Controls.Add(this.btnNorte);
+            this.groupBox1.Controls.Add(this.cboSul);
+            this.groupBox1.Controls.Add(this.cboSudeste);
+            this.groupBox1.Controls.Add(this.cboCentro);
+            this.groupBox1.Controls.Add(this.cboNordeste);
+            this.groupBox1.Controls.Add(this.cboNorte);
+            this.groupBox1.Controls.Add(this.lblQtdSul);
+            this.groupBox1.Controls.Add(this.lblQtdSudeste);
+            this.groupBox1.Controls.Add(this.lblQtdCentro);
+            this.groupBox1.Controls.Add(this.lblQtdNordeste);
+            this.groupBox1.Controls.Add(this.lblQtdNorte);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Location = new System.Drawing.Point(21, 110);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(504, 295);
+            this.groupBox1.TabIndex = 24;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Regiões";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(603, 405);
-            this.Controls.Add(this.btn6);
-            this.Controls.Add(this.btn5);
-            this.Controls.Add(this.btn4);
-            this.Controls.Add(this.btn3);
-            this.Controls.Add(this.btn2);
+            this.ClientSize = new System.Drawing.Size(829, 473);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn1);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.cboEstados);
-            this.Controls.Add(this.lblQtdSul);
-            this.Controls.Add(this.lblQtdSudeste);
-            this.Controls.Add(this.lblQtdCentro);
-            this.Controls.Add(this.lblQtdNordeste);
-            this.Controls.Add(this.lblQtdNorte);
             this.Controls.Add(this.lblQtdEstados);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -341,17 +364,18 @@
         private System.Windows.Forms.Label lblQtdSudeste;
         private System.Windows.Forms.Label lblQtdSul;
         private System.Windows.Forms.ComboBox cboEstados;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox cboNorte;
+        private System.Windows.Forms.ComboBox cboNordeste;
+        private System.Windows.Forms.ComboBox cboCentro;
+        private System.Windows.Forms.ComboBox cboSudeste;
+        private System.Windows.Forms.ComboBox cboSul;
         private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button btn3;
-        private System.Windows.Forms.Button btn4;
-        private System.Windows.Forms.Button btn5;
-        private System.Windows.Forms.Button btn6;
+        private System.Windows.Forms.Button btnNorte;
+        private System.Windows.Forms.Button btnNordeste;
+        private System.Windows.Forms.Button btnCentroOeste;
+        private System.Windows.Forms.Button btnSudeste;
+        private System.Windows.Forms.Button btnSul;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

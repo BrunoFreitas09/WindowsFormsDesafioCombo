@@ -21,15 +21,15 @@ namespace WindowsFormsDesafioCombo
         private void cboEstados_SelectedIndexChanged(object sender, EventArgs e)
         {
             //verifica se existe um item selecionado no combo 
-            if (cboEstados.SelectedIndex != -1)
-            {
-                lblQtdEstados.Text = cboEstados.Items.Count.ToString();
-            }
+
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
+
             // verifica se existe um item selecionado no combo
+
+
             if (cboEstados.SelectedIndex != -1)
             {
                 String est = cboEstados.SelectedItem.ToString();
@@ -84,8 +84,12 @@ namespace WindowsFormsDesafioCombo
                     cboEstados.Focus();
                 }
 
+               
+
+
 
                 //Exibir a qtd de itens dentro de cada comboBox
+                lblQtdEstados.Text = cboEstados.Items.Count.ToString();
                 lblQtdNorte.Text = cboNorte.Items.Count.ToString();
                 lblQtdNordeste.Text = cboNordeste.Items.Count.ToString();
                 lblQtdCentro.Text = cboCentro.Items.Count.ToString();

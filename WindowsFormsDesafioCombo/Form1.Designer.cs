@@ -115,9 +115,9 @@
             this.lblQtdEstados.AutoSize = true;
             this.lblQtdEstados.Location = new System.Drawing.Point(495, 50);
             this.lblQtdEstados.Name = "lblQtdEstados";
-            this.lblQtdEstados.Size = new System.Drawing.Size(13, 13);
+            this.lblQtdEstados.Size = new System.Drawing.Size(19, 13);
             this.lblQtdEstados.TabIndex = 6;
-            this.lblQtdEstados.Text = "0";
+            this.lblQtdEstados.Text = "27";
             // 
             // lblQtdNorte
             // 
